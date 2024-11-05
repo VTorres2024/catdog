@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Gatos y perros</title>
+		<script src="infresults.js" async></script>
+		<link rel="stylesheet" href="infresults.css"/>
+	</head>
+	<body>
+		<h1 id="title">Seleccione el tipo de búsqueda</h1>
+
+		<div id="search_sel">
+			<button onclick="search_sel('gato')">Gatos</button>
+			<button onclick="search_sel('perro')">Perros</button>
+
+			<input id="custom_query"></input>
+			<button onclick="search_sel(document.getElementById('custom_query').value)">Búsqueda Personalizada</button>
+
+			<button id="favs_button" onclick="show_favs()">Favoritos</button>
+		</div>
+
+		<div id="config">
+
+		</div>
+
+		<div id="search_results">
+		</div>
+
+		<center><div id="spinner" class="lds-dual-ring" style="display: none"></div></center>
+	</body>
+</html>
